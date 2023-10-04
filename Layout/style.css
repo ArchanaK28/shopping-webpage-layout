@@ -26,8 +26,9 @@ li,a{
     color: black;
     text-decoration: none;
 }
-nav ul li a{
-    transition: all 0.3s ease 0s;
+nav ul li a:hover{
+    cursor: pointer;
+    color: #fff;
     }
 
 header > button{
@@ -41,6 +42,7 @@ header > button{
 }
 header > button:hover {
     background-color: rgba(169, 42, 0, 0);
+    color: #fff;
 }
 body{
     background-color: #000000;
@@ -49,7 +51,9 @@ body{
    background-repeat: no-repeat;
    background-size: cover;
 }
-
+.para{
+    margin-top: 10px;
+}
 
 .content {
     display: flex;
@@ -60,19 +64,14 @@ body{
 
 .hero-info h1 {
     font-size: 40px;
+	 color: #fff;
 }
 
 .hero-info p {
     color: white;
-    margin: 30px 0;
+    margin: 15px 0;
     font-weight: 400;
     line-height: 2;
-
-}
-.hero-info  p span {
-    background-image: linear-gradient(to left,rgb(30, 114, 232),rgba(82, 226, 20, 0.934),rgba(247, 15, 15, 0.732),rgb(255, 255, 0));
-    animation-iteration-count:5s linear infinite;
-    background-clip: text;
 
 }
 
@@ -96,8 +95,6 @@ body{
 }
 main .hero-info{
 color: #212529;
-    /* display: flex; */
-    /* align-items: center; */
 justify-content: center;
 }
 main .a-btn{
@@ -117,11 +114,16 @@ main .a-btn{
     line-height: 1.5;
     border-radius: 3.25rem;
 } 
+.a-btn:hover{
+    background: #fff;
+    color: #222;
+    cursor: pointer;
+}
 
 /* Style for the social media icons */
 .social-icons {
-    display: flex;
-    align-items: center;
+    margin: 10px 300px;
+    padding: 10px;
   }
   
   .social-icons a {

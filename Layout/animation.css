@@ -1,0 +1,21 @@
+.color-changing-text {
+    animation: changeColor 4s linear infinite; /* Change color over 4 seconds, repeat infinitely */
+}
+
+@keyframes changeColor {
+    0% {
+        color: red;
+    }
+    25% {
+        color: blue;
+    }
+    50% {
+        color: green;
+    }
+    75% {
+        color: pink;
+    }
+    100% {
+        color: red;
+    }
+}
